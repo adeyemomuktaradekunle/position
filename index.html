@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positioning explained with a nav bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 1. Sticky navbar (most common modern use-case) -->
+    <nav class=" navbar sticky">
+        <div class="container">
+            <a href="#" class="logo">Leaning center</a>
+            <ul class="nav-links">
+                <li><a href="#">Welcome</a></li>
+                <li><a href="#">Meet us</a></li>
+                <li><a href="#">programs</a></li>
+                <li><a href="#" class="btn">join now</a></li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+    <!-- Hero / banner area -->
+    <header class="hero">
+        <h1>Welcome to your learning journey</h1>
+        <p>scroll down to see different positioning behaviors</p>
+        </header>
+        <main class="content">
+            <section class="card relative-absolute-example">
+                <h2>position: relative + absolute</h2>
+                <p>Most common combo: parent = relative, child = absolute</p>
+                <div class="profile relative">
+                    <img src="flower.webp" alt="Student" class="avatar">
+                    <span class="badge absolute">New!</span>
+
+
+                </div>
+                <p class="explanation">
+                    The badge is taken out of normal flow and positioned relative to the profile(because parent has position:relative)
+                 </section>
+                </p>
+                <div class="fixed-chat">
+                    <button>Contact us</button>
+
+                </div>
+                <div class="two-column">
+                    <aside class="sidebar sticky">
+                        <h3>Quick links</h3>
+                        <ul>
+                            <li><a href="#">Admin</a></li>
+                            <li><a href="#">Schedule</a></li>
+                            <li><a href="#">Tasks</a></li>
+                            <li><a href="#">Reports</a></li>
+                        </ul>
+
+                    </aside>
+                    <article class="main-content">
+                        <h2>Main content area</h2>
+                        <p>Scroll down...</p>
+                        <div style="height: 120vh; background: linear-gradient(#f0f4f8, #e0e7ff); margin: 2rem 0;">
+                            <!-- tall content to force scrolling -->
+                            <p style="padding: 4rem;">Keep scrolling ↓<br>→ sidebar will stick at top: 80px></p>
+                        </div>
+                        <p>Notice how the sidebar stops sticking when you reach the bottom of its parent container.</p>
+                        
+                        </article>
+                    </div>
+                 </main>
+                </body>
+               </html>
